@@ -1,148 +1,142 @@
 import React from "react";
-import { blog } from "../../../dummydata";
-import "./footer.css";
+import { Link } from "react-router-dom";
+import "../footer/footer.css";
 
 const Footer = () => {
   return (
-    <>
-      <section className="newletter">
-        <div className="container flexSB">
-          <div className="left row">
-            <h1>Newsletter - Stay tune and get the latest update</h1>
-            <span>Far far away, behind the word mountains</span>
+    <footer className="gfg-footer" id="gfg-footer">
+      <div className="footer-wrapper">
+        <div className="footer-wrapper_branding">
+          <Link
+            className="footer-wrapper_branding-anchor"
+            to="https://kodegurus.co.in/"
+          >
+            <h1>
+              <b>KODEGURUS</b>
+            </h1>
+            <br />
+            <br />
+            <br />
+          </Link>
+          <div className="footer-wrapper_branding-address">
+            <i className="gfg-icon gfg-icon_pin"></i>
+            <span style={{ marginRight: "15px" }}>
+              A-143, 5th Floor,
+              <br /> <br /> Sebiz Square <br /> <br />
+              Corporate Tower,
+              <br />
+              <br />
+              Sector-67 Mohali, <br /> <br />
+              Chandigradh - 441600
+              <br />
+            </span>
           </div>
-          <div className="right row">
-            <input type="text" placeholder="Enter email address" />
-            <i className="fa fa-paper-plane"></i>
+          <div className="footer-wrapper_branding-email">
+            <i className="gfg-icon gfg-icon_mail"></i>
+            <Link to="mailto:feedback@geeksforgeeks.org">
+              feedback@kodegurus.co.in.org
+            </Link>
           </div>
         </div>
-      </section>
-      <footer>
-        <div className="container padding">
-          <div className="box logo">
-            <h1>KODEGURUS</h1>
-            <span>Build Innovate & Inspire</span>
-            <p>We Build, We Create Digital Products That Makes Sense.</p>
-            <p>
-              In the age of digital transformation, we help thousands of growing
-              businesses to achieve their goals & success.
-            </p>
-
-            <i className="fab fa-facebook-f icon"></i>
-            <i className="fab fa-twitter icon"></i>
-            <i className="fab fa-instagram icon"></i>
-          </div>
-          <div className="box link ">
-            <h1> Our Services</h1>
-
-            <ul>
-              <li class="animate">
-                <a href="customer_software.php">Custom Software Development</a>
+        <div className="all-footer-information">
+          <div
+            className="footer-wrapper_links"
+            style={{
+              justifyContent: "spaceBetween",
+              textAlign: "-webkit-left",
+            }}
+          >
+            <ul className="footer-wrapper_links-list">
+              <h2>Our Services</h2>
+              <br />
+              <li>
+                <Link to="/reactlang">ReactJs</Link>
               </li>
-              <li class="animate">
-                <a href="product_development.php">Product Development</a>
+              <li>
+                <Link to="/angular">AngularJS</Link>
               </li>
-              <li class="animate">
-                <a href="web_application_development.php">
-                  Web Application Development
-                </a>
+              <li>
+                <Link to="/bootstrap">Bootstrap5</Link>
               </li>
-              <li class="animate">
-                <a href="mobile_app_development.php">Mobile App Development</a>
+              <li>
+                <Link to="/html">HTML5</Link>
               </li>
-              <li class="animate">
-                <a href="ecommerce_development.php">eCommerce Development</a>
+              <li>
+                <Link to="/vue">VueJs</Link>
               </li>
-
-              <li class="animate">
-                <a href="fintech.php">Fintech Development</a>
+            </ul>
+            <ul className="footer-wrapper_links-list">
+              <h1>Our Products</h1>
+              <br />
+              <li>
+                <Link to="/csm">Cyber-School-Manger</Link>
               </li>
-              <li class="animate">
-                <a href="erp.php">ERP &amp; CRM Implementation</a>
+              <li>
+                <Link to="/ccm">Cyber-Club-Manger</Link>
               </li>
-
-              <li class="animate">
-                <a href="ecommerce_development.php">eCommerce Development</a>
+              <li>
+                <Link to="/cim">Cyber-Institute-Manger</Link>
               </li>
-              <li class="animate">
-                <a href="fintech.php">Fintech Development</a>
+              <li>
+                <Link to="/sm">Smart-Board</Link>
               </li>
-              <li class="animate">
-                <a href="erp.php">ERP &amp; CRM Implementation</a>
+            </ul>
+            <ul className="footer-wrapper_links-list">
+              <li>
+                <Link to="/full_stack_developer.php">
+                  Hire Full Stack Developer
+                </Link>
               </li>
-              <li class="animate">
-                <a href="qa_software.php">QA / Software Testing</a>
+              <li>
+                <Link to="/angular_developer.php">Hire Angular Developer</Link>
+              </li>
+              <li>
+                <Link to="/backend_developer.php">Hire Backend Developer</Link>
+              </li>
+              <li>
+                <Link to="/mern_developer.php">Hire MERN Developer</Link>
+              </li>
+              <li>
+                <Link to="/dot_net_developer.php">Hire Dot Net Developer</Link>
+              </li>
+              <li>
+                <Link to="/wordpress_developer.php">
+                  Hire WordPress Developer
+                </Link>
+              </li>
+              <li>
+                <Link to="/ui_ux.php">Hire UI/UX Dessign Expert</Link>
+              </li>
+              <li>
+                <Link to="/laravel.php">Hire Laravel Developer</Link>
+              </li>
+              <li>
+                <Link to="/magento_developer.php">Hire Magento Developer</Link>
+              </li>
+              <li>
+                <Link to="/mobile_app.php">Hire Mobile App Developer</Link>
               </li>
             </ul>
           </div>
-          <div className="box link">
-            <h4> Hire Our Experts</h4>
-            <ul>
-              <li>
-                <a href="full_stack_developer.php">Hire Full Stack Developer</a>
-              </li>
-              <li>
-                <a href="angular_developer.php"> Hire Angular Developer</a>
-              </li>
-              <li>
-                <a href="backend_developer.php">Hire Backend Developer</a>
-              </li>
-              <li>
-                <a href="mern_developer.php">Hire MERN Developer</a>
-              </li>
-              <li>
-                <a href="mean_developer.php">Hire MEAN Developer</a>
-              </li>
-              <li>
-                <a href="dot_net_developer.php">Hire Dot Net Developer</a>
-              </li>
-              <li>
-                <a href="wordpress_developer.php">Hire WordPress Developer</a>
-              </li>
-              <li>
-                <a href="ui_ux.php">Hire UI/UX Dessign Expert</a>
-              </li>
-              <li>
-                <a href="laravel.php">Hire Laravel Developer</a>
-              </li>
-              <li>
-                <a href="magento_developer.php">Hire Magento Developer</a>
-              </li>
-              <li>
-                <a href="mobile_app.php">Hire Mobile App Developer</a>
-              </li>
-            </ul>
-          </div>
-          <div className="box">
-            <h3>Recent Post</h3>
-            {blog.slice(0, 3).map((val) => (
-              <div className="items flexSB">
-                <div className="img">
-                  <img src={val.cover} alt="" />
-                </div>
-                <div className="text">
-                  <span>
-                    <i className="fa fa-calendar-alt"></i>
-                    <label htmlFor="">{val.date}</label>
-                  </span>
-                  <span>
-                    <i className="fa fa-user"></i>
-                    <label htmlFor="">{val.type}</label>
-                  </span>
-                  <h4>{val.title.slice(0, 40)}...</h4>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
-      </footer>
-      <div className="legal">
-        <p>
-          Copyright ©2022 All rights reserved | This template is made with{" "}
-          <i className="fa fa-heart"></i> by Kodegurus
-        </p>
       </div>
-    </>
+      <div className="footer-strip">
+        <div className="copyright">
+          <Link
+            to="https://kodegurus.co.in.org/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            @kodegurus
+          </Link>
+          <span>
+            <Link to="https://www.geeksforgeeks.org/copyright-information/">
+              Some rights reserved
+            </Link>
+          </span>
+        </div>
+      </div>
+    </footer>
   );
 };
 

@@ -28,22 +28,26 @@ const Header = () => {
                 <div className="dropdown-content col-sm-4">
                   <h3>Forntend</h3>
                   <li>
-                    <Link to="/reactlang">ReactLang</Link>
+                    <Link to="/reactlang">ReactJs</Link>
                   </li>
                   <li>
-                    <Link to="/angular">Angular</Link>
+                    <Link to="/angular">AngularJS</Link>
                   </li>
                   <li>
-                    <Link to="/bootstrap">Bootstrap</Link>
+                    <Link to="/bootstrap">Bootstrap5</Link>
                   </li>
                   <li>
-                    <Link to="/html">HTML</Link>
+                    <Link to="/html">HTML5</Link>
+                  </li>
+                  <li>
+                    <Link to="/vue">VueJs</Link>
                   </li>
                 </div>
               </div>
             </li>
+            {/* products */}
+
             <li>
-              {/* products */}
               <div className="dropdown">
                 <Link to="/product">Product</Link>
                 <div className="dropdown-content col-sm-4">
@@ -62,8 +66,9 @@ const Header = () => {
                 </div>
               </div>
             </li>
+            {/* portfolio */}
+
             <li>
-              {/* portfolio */}
               <div className="dropdown">
                 <Link to="/portfolio">Portfolio</Link>
                 <div className="dropdown-content col-sm-4">
@@ -87,11 +92,59 @@ const Header = () => {
             </li>
             {/* HireDeveloper */}
             <li>
+            <div className="dropdown">
               <Link to="/hiredeveloper">HireDeveloper</Link>
+              <div className="dropdown-content col-sm-4">
+                <li>
+                  <Link to="/full_stack_developer.php">
+                    Hire Full Stack Developer
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/angular_developer.php">
+                    Hire Angular Developer
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/backend_developer.php">
+                    Hire Backend Developer
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/mern_developer.php">Hire MERN Developer</Link>
+                </li>
+                <li>
+                  <Link to="/dot_net_developer.php">
+                    Hire Dot Net Developer
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/wordpress_developer.php">
+                    Hire WordPress Developer
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/ui_ux.php">Hire UI/UX Dessign Expert</Link>
+                </li>
+                <li>
+                  <Link to="/laravel.php">Hire Laravel Developer</Link>
+                </li>
+                <li>
+                  <Link to="/magento_developer.php">
+                    Hire Magento Developer
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/mobile_app.php">Hire Mobile App Developer</Link>
+                </li>
+              </div>
+            </div>
             </li>
+            {/* Blog */}
             <li>
               <Link to="/blog">Blog</Link>
             </li>
+            {/* Contact */}
             <li>
               <Link to="/contact">Contact</Link>
             </li>
