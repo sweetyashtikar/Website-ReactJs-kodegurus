@@ -36,11 +36,15 @@ import Bootstrap from "./pages/services/Frontend/bootstrap/Bootstrap";
 import Html from "./pages/services/Frontend/html/Html";
 import VueJs from "./pages/services/Frontend/vue/VueJs";
 // product page
-
 import CyberSchoolManger from "./pages/product/cyberschoolmanger/CyberSchoolManger";
 import CyberClubManger from "./pages/product/cyberclubmanger/CyberClubManger";
 import CyberInstituteManger from "./pages/product/cyberinstitutemanger/CyberInstituteManger";
 import SmartBoard from "./pages/product/smartboard/SmartBoard";
+// services page BACKEND
+import FullStackPhp from "./pages/services/Backend/php/FullStackPhp";
+import FullStackRuby from "./pages/services/Backend/ruby/FullStackRuby";
+import FullStackNodeJs from "./pages/services/Backend/nodejs/FullStackNodeJs";
+import FullStackJava from "./pages/services/Backend/java/FullStackJava";
 
 function App() {
   return (
@@ -61,6 +65,13 @@ function App() {
           <Route exact path="/bootstrap" component={Bootstrap} />
           <Route exact path="/html" component={Html} />
           <Route exact path="/vue" component={VueJs} />
+          {/* services page backend*/}
+          <Route exact path="/php" component={FullStackPhp} />
+          <Route exact path="/.net" component={FullStackDotNet} />
+          <Route exact path="/ruby" component={FullStackRuby} />
+          <Route exact path="/nodejs" component={FullStackNodeJs} />
+          <Route exact path="/java" component={FullStackJava} />
+
           {/* portfolio */}
           <Route exact path="/e-comm" component={EComm} />
           <Route exact path="/education" component={Education} />
