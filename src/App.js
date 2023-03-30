@@ -45,6 +45,21 @@ import FullStackPhp from "./pages/services/Backend/php/FullStackPhp";
 import FullStackRuby from "./pages/services/Backend/ruby/FullStackRuby";
 import FullStackNodeJs from "./pages/services/Backend/nodejs/FullStackNodeJs";
 import FullStackJava from "./pages/services/Backend/java/FullStackJava";
+import FullStackPython from "./pages/services/Backend/paython/FullStackPython";
+//services page Digital-Marketing
+import SearchEnginOptimization from "./pages/services/digitalmarketing/SearchEngin/SearchEnginOptimization";
+import SocialMediaMarketing from "./pages/services/digitalmarketing/SocialMedia/SocialMediaMarketing";
+import SearchEnginMarketing from "./pages/services/digitalmarketing/SeacchEnginMarketing/SearchEnginMarketing";
+import ContentMarketing from "./pages/services/digitalmarketing/ContentMarketing/ContentMarketing";
+import EmailMarketing from "./pages/services/digitalmarketing/EmailMarketing/EmailMarketing";
+import PaidAdsServices from "./pages/services/digitalmarketing/PaidAdsServices/PaidAdsServices";
+//services page others
+import EcomDev from "./pages/services/others/ecomdev/EcomDev";
+import UiUxDev from "./pages/services/others/ui-uxdev/Ui-Ux-Dev";
+import WebAppDev from "./pages/services/others/webappdev/WebAppDev";
+import DevopsAWS from "./pages/services/others/devops-aws/DevopsAWS";
+import MeanStackDev from "./pages/services/others/meanstack/MeanStackDev";
+import MernStackDev from "./pages/services/others/mernstack/MernStackDev";
 
 function App() {
   return (
@@ -60,17 +75,36 @@ function App() {
           <Route exact path="/blog" component={Blog} />
           <Route exact path="/contact" component={Contact} />
           {/* services page frontend*/}
-          <Route exact path="/reactlang" component={ReactJs} />
+          <Route exact path="/react" component={ReactJs} />
           <Route exact path="/angular" component={AngularJs} />
           <Route exact path="/bootstrap" component={Bootstrap} />
-          <Route exact path="/html" component={Html} />
+          <Route exact path="/html5" component={Html} />
           <Route exact path="/vue" component={VueJs} />
           {/* services page backend*/}
           <Route exact path="/php" component={FullStackPhp} />
-          <Route exact path="/.net" component={FullStackDotNet} />
+          <Route exact path="/net" component={FullStackDotNet} />
           <Route exact path="/ruby" component={FullStackRuby} />
           <Route exact path="/nodejs" component={FullStackNodeJs} />
           <Route exact path="/java" component={FullStackJava} />
+          <Route exact path="/python" component={FullStackPython} />
+          {/* services page Digital-Marketing*/}
+          <Route exact path="/seo" component={SearchEnginOptimization} />
+          <Route exact path="/smm" component={SocialMediaMarketing} />
+          <Route exact path="/sem" component={SearchEnginMarketing} />
+          <Route exact path="/content-m" component={ContentMarketing} />
+          <Route exact path="/email" component={EmailMarketing} />
+          <Route exact path="/paid-ad" component={PaidAdsServices} />
+          {/* services page Others*/}
+          <Route exact path="/eCommerce Development" component={EcomDev} />
+          <Route exact path="/ui-ux_design" component={UiUxDev} />
+          <Route
+            exact
+            path="/web-application-development"
+            component={WebAppDev}
+          />
+          <Route exact path="/aws-dev" component={DevopsAWS} />
+          <Route exact path="/mern-stack" component={MeanStackDev} />
+          <Route exact path="/mean-stack" component={MernStackDev} />
 
           {/* portfolio */}
           <Route exact path="/e-comm" component={EComm} />

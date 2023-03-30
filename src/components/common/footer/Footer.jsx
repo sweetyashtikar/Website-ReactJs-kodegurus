@@ -82,6 +82,9 @@ const Footer = () => {
               </li>
             </ul>
             <ul className="footer-wrapper_links-list">
+              <h1>Hire Our Experts</h1>
+              <br />
+
               <li>
                 <Link to="/full_stack_developer.php">
                   Hire Full Stack Developer
@@ -99,11 +102,10 @@ const Footer = () => {
               <li>
                 <Link to="/dot_net_developer.php">Hire Dot Net Developer</Link>
               </li>
-              <li>
-                <Link to="/wordpress_developer.php">
-                  Hire WordPress Developer
-                </Link>
-              </li>
+            </ul>
+            <ul className="footer-wrapper_links-list">
+              <h1>Hire Our Experts</h1>
+              <br />
               <li>
                 <Link to="/ui_ux.php">Hire UI/UX Dessign Expert</Link>
               </li>
@@ -116,7 +118,14 @@ const Footer = () => {
               <li>
                 <Link to="/mobile_app.php">Hire Mobile App Developer</Link>
               </li>
+              <li>
+                <Link to="/wordpress_developer.php">
+                  Hire WordPress Developer
+                </Link>
+              </li>
             </ul>
+
+            
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ import React from "react";
 const VueJs = () => {
   return (
     <div>
-      <h1>Welcome VueJs </h1>
+      <h1 style={{"textAlign":"center"}}>Welcome VueJs </h1>
     </div>
   );
 };
