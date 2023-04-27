@@ -1,29 +1,31 @@
-import React from "react"
-import Heading from "../../common/heading/Heading"
-import "./Hero.css"
+import React from "react";
+import Heading from "../../common/heading/Heading";
+import "./Hero.css";
 
 const Hero = () => {
   return (
     <>
-      <section className='hero'>
-        <div className='container'>
-          <div className='row'>
-            <Heading subtitle='WELCOME TO KODEGURUS' title='We Build, We Create Digital Products That Makes Sense' />
-            <p>In the age of digital transformation, we help thousands of growing businesses to achieve their goals & success.</p>
-            <div className='button'>
-              <button className='primary-btn'>
-                GET STARTED NOW <i className='fa fa-long-arrow-alt-right'></i>
+      <div className="hero">
+        <div className="container">
+          <div className="text-area">
+            <h1 className="main-heading">WELCOME TO KODEGURUS</h1>
+            <h3 className="sub-heading">
+              We Build, We Create Digital Products
+              <br /> That Makes Sense
+            </h3>
+            <div className="buttons d-flex">
+            <button className="primary-btn btn firstbtn">
+                GET STARTED <i className="fa fa-long-arrow-alt-right"></i>
               </button>
-              <button>
-                HIRE DEVELOPER <i className='fa fa-long-arrow-alt-right'></i>
+              <button className="bannerbtn btn">
+                HIRE DEVELOPER <i className="fa fa-long-arrow-alt-right"></i>
               </button>
             </div>
           </div>
         </div>
-      </section>
-      <div className='margin'></div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

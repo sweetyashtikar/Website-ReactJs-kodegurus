@@ -1,7 +1,9 @@
 /*--------head------------*/
 .head {
-  padding: 20px 0;
-  color: #blue;
+  padding: 5px 0;
+}
+.logo {
+  margin-left: 90px;
 }
 .logo h1 {
   font-size: 35px;
@@ -10,162 +12,101 @@
 .head .icon {
   margin-left: 10px;
 }
+.navs {
+  margin-left: 45px;
+}
+.navbarNavs {
+  margin-left: 55px;
+}
+.navbar {
+  background-color: rgba(255, 255, 255, 0.2);
+}
 /*--------head------------*/
 /*--------header------------*/
-header {
-  background-color: rgba(255, 255, 255, 0.2);
-  margin: 0 30px;
+.navHeader {
+  display: flex;
+  justify-content: end;
 }
-header .nav {
-  display: flex !important;
+.header {
+  /* background-color: rgba(255, 255, 255, 0.2); */
+  position: absolute;
+  margin: 0 30px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.nav-item a {
+  color: black;
+  font-weight: 600;
 }
 header li {
   margin-right: 40px;
 }
-header ul {
-  padding: 30px 20px;
+.hire {
+  background-color: #1eb2a6;
+  color: white!important;
+  border-radius: 10px;
 }
-header ul li a {
-  color: #blue;
-  font-weight: 800;
-  transition: 0.5s;
-}
-header ul li a:hover {
-  color: #blue;
-}
-.start {
-  background-color: #black;
-  padding: 30px 70px;
-  color: #blue;
-  clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
-}
-.toggle {
-  display: none;
-}
+/* .navbar-toggler-icon{
+  display:none;
+} */
 /*--------header------------*/
-@media screen and (max-width: 768px) {
-  .start {
-    clip-path: none;
-  }
-  header {
-    margin: 0;
-    background-color: #1eb2a6;
-    position: relative;
-  }
-  header ul.flexSB {
+@media only screen and (max-width: 960px) {
+  .head {
     display: none;
   }
-  header ul li {
-    margin-bottom: 20px;
-  }
-  .toggle {
-    display: block;
-    background: none;
-    color: #fff;
-    font-size: 30px;
-    position: absolute;
-    right: 0;
-    top: -20px;
-  }
-  .mobile-nav {
-    position: absolute;
-    top: 7vh;
-    left: 0;
-    width: 100%;
+  .navbar {
     background-color: #1eb2a6;
   }
+  .logo {
+    margin: 20px;
+  }
+  .logo span {
+    color: #ffff;
+    font-size: 15px;
+  }
+  .logo h1 {
+    font-size: 30px;
+    font-weight: 900;
+    color: #ffff;
+  }
+  .logo {
+    margin: 10px 20px;
+  }
+  .navbar {
+    padding: 0px;
+  }
+  .navbar-toggler {
+    margin: 10px;
+    border: 0;
+    box-shadow: none !important;
+  }
+  .navbar-toggler .fa {
+    margin: 0px;
+    transition: 0.2s;
+  }
+  .header{
+    margin: 0;
+  }
 }
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
+@media screen and (max-width: 768px) {
+  /* .navbar-toggler-icon{
+    display:block;
+  } */
+  /* header{
+    display:flex;
+  } */
+  /* .navbar{
+    display:none;
+  } */
 
-.navbar {
-  overflow: hidden;
-  background-color: #333;
 }
-
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 24px 26px;
-  text-decoration: none;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: purpule;
-  padding: 24px 26px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: none;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 480px;
-  z-index: 1;
-}
-
-.dropdown-content a  {
-  float: none;
-  color: black;
-  padding: 22px 26px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content link:hover {
-  background-color: #black;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.navbar link:hover {
-	background: #5F5F5F;
-}
-.column {
-	float: left;
-	width: 25%;
-	height: 600px;
-}
-.column link {
-	display: block;
-	float: none;
-	text-align: left;
-}
-.column h3 {
-	padding: 50px;
-}
-.column link:hover {
-	color: #fff;
-	background: #373737;
-}
-.row:after {
-	content: '';
-	display: table;
-	clear: both;
-}
-@media(max-width: 650px){
-	.column {
-		width: 100%;
-		height: auto;
-	}
+@media only screen and (max-width: 1024px) {
+  /* .logo {
+    margin-left: 0px;
+  } */
+  /* .social{
+    display:none;
+  } */
 }

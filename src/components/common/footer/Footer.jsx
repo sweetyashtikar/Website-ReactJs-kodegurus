@@ -4,70 +4,58 @@ import "../footer/footer.css";
 
 const Footer = () => {
   return (
-    <footer className="gfg-footer" id="gfg-footer">
-      <div className="footer-wrapper">
-        <div className="footer-wrapper_branding">
-          <Link
-            className="footer-wrapper_branding-anchor"
-            to="https://kodegurus.co.in/"
-          >
-            <h1>
+    <footer>
+      <div className="container footer">
+        <div className="row">
+          <div className="col-md-3 col-sm-6 col-6">
+            <h1 className="logoText">
               <b>KODEGURUS</b>
             </h1>
-            <br />
-            <br />
-            <br />
-          </Link>
-          <div className="footer-wrapper_branding-address">
-            <i className="gfg-icon gfg-icon_pin"></i>
-            <span style={{ marginRight: "15px" }}>
-              A-143, 5th Floor,
-              <br /> <br /> Sebiz Square <br /> <br />
-              Corporate Tower,
-              <br />
-              <br />
-              Sector-67 Mohali, <br /> <br />
-              Chandigradh - 441600
-              <br />
-            </span>
-          </div>
-          <div className="footer-wrapper_branding-email">
-            <i className="gfg-icon gfg-icon_mail"></i>
-            <Link to="mailto:feedback@geeksforgeeks.org">
-              feedback@kodegurus.co.in.org
-            </Link>
-          </div>
-        </div>
-        <div className="all-footer-information">
-          <div
-            className="footer-wrapper_links"
-            style={{
-              justifyContent: "spaceBetween",
-              textAlign: "-webkit-left",
-            }}
-          >
-            <ul className="footer-wrapper_links-list">
-              <h2>Our Services</h2>
-              <br />
+            <ul className="footer-lists">
               <li>
-                <Link to="/reactlang">ReactJs</Link>
+                <Link to="/reactlang">
+                  A-143, 5th Floor, <br />
+                  Sebiz Square Corporate Tower, <br />
+                  Sector-67 Mohali, <br />
+                  Chandigradh - 441600
+                </Link>
               </li>
               <li>
-                <Link to="/angular">AngularJS</Link>
+                <Link to="mailto:feedback@geeksforgeeks.org">
+                  feedback@kodegurus.co.in.org
+                </Link>
               </li>
               <li>
-                <Link to="/bootstrap">Bootstrap5</Link>
-              </li>
-              <li>
-                <Link to="/html">HTML5</Link>
-              </li>
-              <li>
-                <Link to="/vue">VueJs</Link>
+                <div >
+                  <ul className="footer-icons">
+                    <li>
+                      <Link to="mailto:feedback@geeksforgeeks.org">
+                        <i className="fa-brands fa-facebook"></i>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="mailto:feedback@geeksforgeeks.org">
+                        <i className="fa-brands fa-instagram"></i>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="mailto:feedback@geeksforgeeks.org">
+                      <i className="fa-brands fa-linkedin"></i>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="mailto:feedback@geeksforgeeks.org">
+                      <i className="fa-brands fa-twitter"></i>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </li>
             </ul>
-            <ul className="footer-wrapper_links-list">
-              <h1>Our Products</h1>
-              <br />
+          </div>
+          <div className="col-md-3  col-sm-6 col-6">
+            <h2 className=" footerHeadings">Our Products</h2>
+            <ul className="footer-lists">
               <li>
                 <Link to="/csm">Cyber-School-Manger</Link>
               </li>
@@ -81,10 +69,10 @@ const Footer = () => {
                 <Link to="/sm">Smart-Board</Link>
               </li>
             </ul>
-            <ul className="footer-wrapper_links-list">
-              <h1>Hire Our Experts</h1>
-              <br />
-
+          </div>
+          <div className="col-md-3  col-sm-6 col-6">
+            <h2 className=" footerHeadings">Hire Our Experts</h2>
+            <ul className="footer-lists">
               <li>
                 <Link to="/full_stack_developer.php">
                   Hire Full Stack Developer
@@ -103,9 +91,10 @@ const Footer = () => {
                 <Link to="/dot_net_developer.php">Hire Dot Net Developer</Link>
               </li>
             </ul>
-            <ul className="footer-wrapper_links-list">
-              <h1>Hire Our Experts</h1>
-              <br />
+          </div>
+          <div className="col-md-3  col-sm-6 col-6">
+            <ul className="footer-lists">
+              <h2 className="footerHeadings">Hire Our Experts</h2>
               <li>
                 <Link to="/ui_ux.php">Hire UI/UX Dessign Expert</Link>
               </li>
@@ -124,25 +113,7 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-
-            
           </div>
-        </div>
-      </div>
-      <div className="footer-strip">
-        <div className="copyright">
-          <Link
-            to="https://kodegurus.co.in.org/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            @kodegurus
-          </Link>
-          <span>
-            <Link to="https://www.geeksforgeeks.org/copyright-information/">
-              Some rights reserved
-            </Link>
-          </span>
         </div>
       </div>
     </footer>

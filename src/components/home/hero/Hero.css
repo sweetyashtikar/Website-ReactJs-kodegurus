@@ -1,17 +1,16 @@
+
 .hero {
   background-image: url("../../../../public/images/bg.webp");
-  background-size: cover;
-  background-attachment: fixed;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
   width: 100%;
   height: 100vh;
   padding-top: 20%;
   padding-right: 50px;
   color: #fff;
 }
+
 .hero #heading h3 {
   color: #black;
 }
@@ -20,16 +19,83 @@
   margin: 0;
   padding: 0;
 }
-@media screen and (max-width: 768px) {
-  .margin {
-    height: 40vh;
-  }
+.buttons{
+  justify-content:start;
+}
+.firstbtn{
+  padding: 12px 20px;
+  background-color: #1eb2a6;
+  color: #ffff;
+  font-weight: 600;
+  border: none;
+  margin: 30px 10px 0 0;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 0 24px 36px -11px rgb(0 0 0 / 9%);
+  transition: 0.5s;
+}
+.bannerbtn {
+  padding: 12px 20px;
+  background-color: #fff;
+  color: #1eb2a6;
+  font-weight: 600;
+  border: none;
+  margin: 30px 10px 0 0;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: 0 24px 36px -11px rgb(0 0 0 / 9%);
+  transition: 0.5s;
+}
+.bannerbtn i {
+  margin-left: 20px;
+}
+.bannerbtn:hover {
+  box-shadow: none;
+}
+@media only screen and (max-width: 768px) {
   .hero {
     background-position: right;
-    padding-top: 50%;
     height: 80vh;
+    margin-top:80px;
   }
   .hero .row {
     width: 100%;
+  }
+  .buttons{
+    justify-content:center;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .text-area{
+    margin:140px 0 40px 0
+  }
+  .main-heading{
+    font-size:20px;
+  }
+  .sub-heading{
+    font-size:16px;
+  }
+  .bannerbtn{
+    padding:5px;
+  }
+  .firstbtn{
+    width: 150px;
+    padding:4px;
+    height: 100%;
+    font-size: 10px;
+    margin:0px;
+  }
+  .bannerbtn{
+    width: 150px;
+    padding:4px;
+    height: 100%;
+    font-size: 10px;
+    margin:0px;
+  }
+  .bannerbtn i{
+    margin:0px;
+  }
+  .buttons{
+    justify-content:space-between;
   }
 }

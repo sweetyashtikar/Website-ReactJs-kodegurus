@@ -150,8 +150,8 @@ function App() {
           />
           <Route exact path="/mobile_app.php" component={FullStackMobile} />
         </Switch>
-        <Mark />
-        <Logo />
+        {/* <Mark /> */}
+        {/* <Logo /> */}
         <Footer />
       </Router>
     </>
